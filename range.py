@@ -15,7 +15,7 @@ def list_range():
     numbers = list(range(1,11))
     print(numbers)
 list_range()
-#adding a third argument to range, to skip numbers 
+#adding a third argument to range, to skip numbers
 for even_number in range(0,6,2):
     print(even_number)
 list_item= []
@@ -26,6 +26,24 @@ for item in list_item:
     list_item_.append(item + item + 1)
 
 print(list_item_)
+min = min(list_item_)
+print(min)
+max = max(list_item_)
+print(max)
+
+#list comprehensions
+square = [value ** 2 for value in range(1,11)]
+
+print(square[-1])
+for number in square[2:8:2]:
+    print(number)
+
+#tuple items cannot be redefined except the variable itself is redifined. 
+tuple_list = 3,4,3,5
+
+#example
+tuple_list = 4,3,4,6
+print(tuple_list)
 
 
 
