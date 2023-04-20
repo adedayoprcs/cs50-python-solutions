@@ -38,13 +38,13 @@ favourite_language = {"Pleasant":"Javecritp", "John":"C++", "Precious":"Python",
 names = ["Precious", "John", "James"]
 for name, language in favourite_language.items():
     if name in names:
-        print(name[:])
-        print(favourite_language[name])
+        (name[:])
+        (favourite_language[name])
 #using the .key() method to loop over each keys in a dictionary. 
 for name in favourite_language.keys():
     if name in names:
         languages = favourite_language[name]
-        print(f"{name}"":"f"{languages}")
+        (f"{name}"":"f"{languages}")
    
 #Nesting..
 alien_0 = {"name":"stranger", "color":"green", "Point":"5"}
@@ -53,7 +53,38 @@ alien_2 = {"name":"johnwick", "color":"white", "Point":"5"}\
 
 aleins = [alien_0, alien_1, alien_2]
 for alein in aleins:
-    print(alein)
+   
+    aliens_list = []
+
+#Here we write a for loop to do the opration below the for loop.
+# we assign a variable alien_number in the for for loop because it's needed to run the loop not because we need it
+# we used to following opration to create  alien_0 5 times and save it into a dic. 
+
+for alien_number in range(5):
+    alien_0 = {"name":"stranger", "color":"green", "Point":"5"}
+    aliens_list.append(alien_0)
+    
+
+#Here we run a for loop on the list we had created. 
+#each alien is assign to alien_dic
+# the an if statement is used to check if the color of that alien assigned to alien dic 
+#at the perticular time is green, if Yes, then then a new value is assigned to the color which is blue. 
+
+for alien_dic in aliens_list[:2]:
+    if alien_dic["color"] == "green" :
+        alien_dic["color"] = "blue"
+
+#Nesting a list into a dic
+favourite_language = {"Pleasant":["Javecritp"], "John":["C++", "Python",], "Precious":["Python"], "James":["C", "goland"]}
+for name, languages in favourite_language.items():
+    
+    for language in languages:
+        (language)
+
+
+       
+
+
 
 
 
