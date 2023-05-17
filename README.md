@@ -1,2 +1,1 @@
-# cs50-python-solutions
-Solving the CS50  Python course problems
+What Python learnings from the Python Crash Course Book by Eric Matthes 
